@@ -110,7 +110,8 @@
            });
       }
    
-   setInterval(getOptionChainData, 10000);
+   //setInterval(getOptionChainData, 10000);
+   getOptionChainData();
    
    $(document).on('change', '#selecttypeExpiry', function() {
        list_of_dates = getListofExpriyList($("#selecttypeExpiry").val());

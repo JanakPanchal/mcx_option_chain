@@ -49,9 +49,7 @@ jobs:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2    
-      - name: Run PHP project
-        run: php index.php # Change this to the entry point of your PHP project
+        uses: actions/upload-pages-artifact@v2
 
   # Deployment job
   deploy:
