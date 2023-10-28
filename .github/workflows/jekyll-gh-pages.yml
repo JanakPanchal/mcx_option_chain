@@ -40,7 +40,7 @@ jobs:
           composer --version  
       - name: Verify PHP installation
         run: php -v  
-        
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
@@ -50,6 +50,8 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2    
+      - name: Run PHP project
+        run: php index.php # Change this to the entry point of your PHP project
 
   # Deployment job
   deploy:
