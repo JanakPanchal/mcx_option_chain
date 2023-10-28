@@ -37,8 +37,9 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+
       - name : Set up PHP
-        user: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@v2
         with:
           php-version: 7.4
           extensions: mbstring, curl
