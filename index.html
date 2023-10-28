@@ -97,7 +97,7 @@
        selDate = $("#selectExpiry").val();
        $.ajax({
                type: 'GET',
-               url: 'fun/getoptionchaindatang.php/?date='+selDate,
+               url: 'fun/getoptionchaindatang.php?date='+selDate,
                dataType: 'json',
                encode: true
            })
