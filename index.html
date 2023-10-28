@@ -98,12 +98,12 @@
        reqdata = {'Commodity':'NATURALGAS','Expiry':'23NOV2023'}
        $.ajax({
                type: 'POST',
-               url: "https://www.mcxindia.com/backpage.aspx/GetOptionChain",
+               url: "https://www.mcxindia.com/backpage.aspx/GetOptionChain/",
                headers: {
                     'Access-Control-Allow-Origin': '*',
                     'Content-Type':'application/json'
                 },
-               dataType: 'jsonp',
+              //  dataType: 'json',
                data: JSON.stringify(reqdata)
 
                
