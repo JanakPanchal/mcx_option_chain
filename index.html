@@ -99,8 +99,13 @@
        $.ajax({
                type: 'POST',
                url: "https://www.mcxindia.com/backpage.aspx/GetOptionChain",
-               contentType: "application/json; charset=utf-8",
+               headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Content-Type':'application/json'
+                },
+               dataType: 'jsonp',
                data: JSON.stringify(reqdata)
+
                
            })
            .done(function(data) {
