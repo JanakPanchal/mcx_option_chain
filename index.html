@@ -100,7 +100,7 @@
               type: 'POST',
                url: "https://www.mcxindia.com/backpage.aspx/GetOptionChain",
                dataType: 'json',
-               data: data,
+               data: JSON.stringify(data),
                encode: true
            })
            .done(function(data) {
