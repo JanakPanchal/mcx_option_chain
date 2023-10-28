@@ -95,10 +95,12 @@
     function getOptionChainData() {
        $("#loader").removeClass("d-none");
        selDate = $("#selectExpiry").val();
+       data = {'Commodity':'NATURALGAS','Expiry':'23NOV2023'}
        $.ajax({
-               type: 'GET',
-               url: 'fun/getoptionchaindatang.php/?date='+selDate,
+              type: 'POST',
+               url: "https://www.mcxindia.com/backpage.aspx/GetOptionChain",
                dataType: 'json',
+               data: data,
                encode: true
            })
            .done(function(data) {
